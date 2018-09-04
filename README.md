@@ -1,0 +1,1 @@
+# quintype-diamond-sweeper-solution-
