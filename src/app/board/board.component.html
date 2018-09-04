@@ -1,0 +1,14 @@
+  <div>
+    Score: {{score}}
+    <br />
+    Completed: {{completed ? 'Game Completed': 'Game Going On'}}
+  </div>
+  <table >
+      <ng-container *ngFor="let row of board_view; let i = index">
+          <tr>
+              <ng-container *ngFor="let col of row; let j = index">
+                  <td [innerHTML]="col" class="box" style="margin:0px" (click)="onClick(i,j)"></td>
+              </ng-container>
+          </tr>
+      </ng-container>
+  </table>
